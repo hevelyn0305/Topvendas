@@ -5,7 +5,6 @@
 -- Hevelyn Souza
 -- Ana Clara Parrião
 
-
 CREATE DATABASE IF NOT EXISTS topvendas;
 
 USE topvendas;
