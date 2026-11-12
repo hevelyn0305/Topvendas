@@ -1,55 +1,86 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eduplan</title>
+    <title>Topvendas</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+
+    
     <link rel="stylesheet" href="style.css">
-
 </head>
-
 <body>
-
     <header class="header">
-
         <div class="header-inner">
             <a href="#" class="logo">
-                <img src="/assets/logo.png" alt="Logo do Eduplan">
-                <h2>
-                    Top<span>Vendas</span>
-                </h2>
+                <img src="assets/logo.png" alt="Logo da Topvendas">
+
+                <h2 class="logo-h2" style="color: var(--blue)">Top<span style="color: var(--gray)">Vendas</span></h2>
             </a>
-            <nav>
-                <ul class="nav">
 
-                    <li><a href="#">Início</a></li>
-                    <li><a href="#">Recursos</a></li>
-                    <li><a href="#">Benefícios</a></li>
-                    <li><a href="#">Sobre</a></li>
-                    <li><a href="#">Depoimento</a></li>
-                    <li><a href="#">Contato</a></li>
-                </ul>
-            </nav>
+            <ul class="nav" id="nav">
+                <li><a href="#">Produtos</a></li>
+                <li><a href="#">Carrinho</a></li>
+
+                <!-- Para os fornecedores -->
+                <li><a href="#">Central do Fornecedor</a></li>
+                <li><a href="#">Contato</a></li>
+                <li><a href="#">Sobre Nós</a></li>
+            </ul>
+
             <div class="actions">
-
-                <a href="#" class="btn-entrar">
-                    Entrar
-                </a>
-
-                <a href="#" class="btn-cadastrar">
-                    Cadastrar
-                </a>
-
+                <a href="#" class="btn btn-entrar">Entrar</a>
+                <a href="#" class="btn btn-cadastrar btn-azul">Cadastrar</a>
             </div>
 
             <button class="hamburguer" id="btn-menu">☰</button>
-
         </div>
-
     </header>
+
+    <section class="hero">
+        <div class="hero-inner">
+            <div class="hero-texto">
+                <span class="hero-etiqueta">Para você</span>
+
+                <h1 class="hero-titulo">Economize      Renove      <span>seguro</span></h1>
+
+                <p class="hero-descricao">
+                    A forma mais segura, fácil e barata de comprar seus eletrodomésticos.
+                </p>
+
+                <div class="hero-btn">
+                    <a href="#" class="btn btn-contorno"> <span class="material-symbols-outlined">play_arrow</span> Veja Mais</a>
+                    <a href="#" class="btn btn-azul"><span class="material-symbols-outlined">shopping_cart</span>Começar agora</a>
+                </div>
+
+                <ul class="hero-vantagens">
+                    <li>
+                        <span class="material-symbols-outlined">delivery_truck_speed</span>
+                        <p>Entrega Rápida</p>
+                    </li>
+                    <li>
+                        <span class="material-symbols-outlined">credit_card</span>
+                        <p>Pagamento seguro e garantido</p>
+                    </li>
+                    <li>
+                        <span class="material-symbols-outlined">verified_user</span>
+                        <p>Curadoria de qualidade</p>
+                    </li>
+                </ul>
+            </div>
+
+            <img 
+                src="/assets/topvcanva.png"
+                alt="Eletrodomésticos à venda no site"
+                class="hero-imagem"
+            >
+        </div>
+    </section>
 
     <script src="script.js"></script>
 </body>
-
 </html>
